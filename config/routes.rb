@@ -1,4 +1,4 @@
-require 'api_contraints'
+require 'api_constraints'
 
 DobroApi::Application.routes.draw do
   # Api definition
