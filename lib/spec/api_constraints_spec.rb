@@ -15,7 +15,7 @@ describe ApiConstraints do
 
     it "returns the default version when 'default' option is specified" do
       request = double(host: 'api.dobro.dev')
-      api_constraints_v2.matches?(request).should be_truthy
+      api_constraints_v2 matches?(request).should be_truthy
     end
   end
 end
