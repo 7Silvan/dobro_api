@@ -1,6 +1,7 @@
 require 'api_constraints'
 
 DobroApi::Application.routes.draw do
+  mount SabisuRails::Engine => "/sabisu_rails"
   devise_for :users
   # Api definition
   namespace :api, defaults: { format: :json },
