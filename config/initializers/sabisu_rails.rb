@@ -3,7 +3,7 @@
 SabisuRails.setup do |config|
 
   # Base uri for posting the 
-  config.base_api_uri = 'api.dobro_api.dev'
+  config.base_api_uri = 'api.dobroapi.dev'
 
   # Ignored attributes for building the forms
   # config.ignored_attributes = %w{ created_at updated_at id }
@@ -23,7 +23,7 @@ SabisuRails.setup do |config|
 
   # Resources on the api
   config.resources = [:users]
-  config.default_resouce = :users
+  config.default_resource = :users
 
   # Application name
   # mattr_accessor :app_name
