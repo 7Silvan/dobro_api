@@ -1,13 +1,17 @@
 require 'rails_helper'
+require 'spec_helper'
 
 class Authentication
   include Authenticable
   def request
   end
+  def response
+  end
 end
 
 describe Authenticable do
   let(:authentication) { Authentication.new }
+  subject { authentication }
 
   describe "#current_user" do
     before do
@@ -18,7 +22,6 @@ describe Authenticable do
 
     it "returns the user from the authorization header" do
       expect(authentication.current_user.auth_token).to eql @user.auth_token
-
     end
   end
 
